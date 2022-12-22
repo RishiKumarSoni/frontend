@@ -9,7 +9,7 @@ body {
 .header {
     display: flex;
     padding: 28px 16px;
-    background-color: #FFCC2E;
+    background-color: #ffcb2e;
     align-items: center;
     text-align: center;
     justify-content: space-between;
@@ -87,7 +87,7 @@ body {
     border-radius: 32px;
     /* border: none; */
     font-weight: 600;
-    background-color: #FFCC2E;
+    opacity: 100%;
 }
 
 /* === design ==== */
@@ -324,3 +324,374 @@ body {
     font-weight: bold;
 }
 
+/* === hire === */
+
+.hire {
+    background-color: white;
+}
+
+.hire-container {
+    display: flex;
+    padding: 100px;
+}
+
+.hire .hire-left-h1 {
+    font-size: 42px;
+    padding: 0 200px 12px 0;
+    /* font-weight: bold; */
+}
+
+.hire .hire-left-p {
+    font-size: 14px;
+    line-height: 32px;
+    text-align: left;
+    padding: 0 200px 25px 0;
+    color: #828282;
+}
+
+.hire .hire-div {
+    width: 50%;
+}
+
+.hire .price-btn {
+    border: 1px solid #c9c9c9;
+    background-color: white;
+    color: black;
+    padding: 16px 32px;
+    font-weight: 600;
+}
+
+.hire .price-btn:hover {
+    background-color: black;
+    transition: 0.4s;
+    color: white;
+}
+
+.hire .hire-div-aside {
+    display: flex;
+    align-items: center;
+}
+
+.hire .side1 {
+    /* border: 1px solid red; */
+    width: 50%;
+    text-align: center;
+    height: 90%;
+    box-shadow: 0 0 5px 5px #cfcfcf;
+
+}
+
+.hire .side2 {
+    /* border: 1px solid red; */
+    width: 50%;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 5px 5px #cfcfcf;
+
+}
+
+.hire .side1 .icon {
+    padding: 32px;
+}
+
+.hire .side2 .icon {
+    padding: 32px;
+}
+
+.hire h1 {
+    font-size: 40px;
+    padding: 0;
+    margin: 0;
+}
+
+.hire h5 {
+    padding: 0;
+    /* margin-bottom: 10px; */
+    color: #828282;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+.hire h4 {
+    color: #828282;
+    padding: 0;
+    margin-top: 0;
+
+}
+
+.hire .std-btn-1 {
+    margin: 32px 0;
+    font-size: 12px;
+    border: 1px solid #c9c9c9;
+    background-color: white;
+    color: black;
+    padding: 8px 16px;
+}
+
+.hire .std-btn-1:hover {
+    background-color: black;
+    transition: 0.4s;
+    color: white;
+}
+
+.hire .std-btn-2 {
+    margin: 32px 0;
+    font-size: 12px;
+    border: 1px solid #c9c9c9;
+    background-color: black;
+    color: white;
+    padding: 8px 16px;
+}
+
+.hire .std-btn-2:hover {
+    background-color: white;
+    color: black;
+    transition: 0.4s;
+}
+
+.hire .ribbon {
+    position: absolute;
+    font-size: 12px;
+    font-weight: 600;
+    background-color: #FFCC2E;
+    padding: 8px 64px;
+    rotate: 45deg;
+    top: 2px;
+    left: 58%;
+}
+
+.hire .hire-footer {
+    display: flex;
+    overflow: visible;
+    /* border: 1px solid red; */
+    justify-content: space-around;
+    align-items: center;
+    padding: 100px;
+}
+
+.hire .hire-foo-div1 {
+    width: 25%;
+    text-align: center;
+    /* border: 1px solid red; */
+    text-align: right;
+    font-size: 18px;
+    line-height: 32px;
+}
+
+.hire .hire-foo-div3 {
+    width: 25%;
+    text-align: center;
+    /* border: 1px solid red; */
+    text-align: left;
+    font-size: 18px;
+    line-height: 32px;
+
+}
+
+.hire .hire-footer img {
+    object-fit: cover;
+    /* width: 100%; */
+    align-items: center;
+}
+
+.company {
+    align-items: center;
+    text-align: center;
+    /* border: 1px solid red; */
+    padding: 100px;
+    background-color: white;
+}
+
+.company .row1 img {
+    width: 250px;
+    height: 250px;
+    object-fit: scale-down;
+    border: 1px solid #c9c9c9;
+    opacity: 50%;
+}
+
+.company .row1 img:hover {
+    opacity: 100%;
+    transition: 0.25;
+}
+
+.article {
+    padding: 100px;
+}
+
+.article .head {
+    display: flex;
+    /* border: 1px solid red; */
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+
+.article .article-header1 {
+    font-size: 32px;
+    /* border: 1px solid red; */
+    margin: 0;
+}
+
+.article .article-a {
+    font-size: 18px;
+    margin: 0;
+    text-decoration: none;
+    /* border: 1px solid red; */
+    color: black;
+    border-bottom: 2px solid black;
+    padding-bottom: 4px;
+}
+
+.article .article-a:hover {
+    opacity: 50%;
+    transition: 0.4s;
+}
+
+.article .article-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.article .insta-page .insta {
+    justify-content: space-between;
+    display: flex;
+    padding: 16px;
+    background-color: white;
+    align-items: center;
+}
+
+.article .insta-page .insta a{
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+}
+
+.article .insta-page .insta .like-img {
+    opacity: 80%;
+}
+
+.article .insta-page .insta .like-img:hover {
+    opacity: 100%;
+}
+
+.article .insta-page {
+    width: 30%;
+    position: relative;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 2px 2px #c4c4c4;
+    /* overflow-clip-margin: content-box; */
+    overflow: clip;
+}
+
+.article .insta-page .insta-img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.article .insta-page .insta-img:hover {
+    transform: scale(1.2);
+    transition: 0.4s;
+}
+
+.article .insta-page .title {
+    position: absolute;
+    padding: 12px 24px;
+    left: 0px;
+    top: 265px;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    color: #828282;
+}
+.article .insta-page h3 {
+    padding: 8px 24px;
+    font-size: 16px;
+}
+
+.article .insta-page p {
+    padding: 8px 24px;
+    font-size: 14px;
+    color: #525252;
+    line-height: 24px;
+}
+
+/* ==== footer ==== */
+
+.footer {
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid #828282; */
+    background-color: white;
+}
+
+.footer .footer-left{
+    width: 25%;
+}
+
+.footer .footer-left img {
+    margin: 8px 0;
+
+}
+
+.footer .footer-left p {
+    margin: 8px 0;
+}
+
+.footer .footer-left a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    border-bottom: 2px solid black;
+
+}
+
+.footer .footer-mid {
+    text-align: center;
+    width: 50%;
+}
+
+.footer .footer-mid p {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.footer .footer-mid span {
+    color: #828282;
+}
+
+.footer .footer-mid form{
+    height: 54px;
+    padding: 0;
+}
+
+.footer .footer-mid form input {
+    height: 90%;
+    width: 275px;
+    margin: 0;
+    border: none;
+}
+
+.footer .footer-mid form button {
+    height: 100%;
+    border: none;
+    margin: 0;
+    background-color: white;
+}
+
+.footer .footer-right {
+    width: 25%;
+    text-align: right;
+}
+
+.footer .footer-right p {
+    margin-right: 8px;
+}
+
+.footer .footer-right img:hover {
+    opacity:50%;
+    transition: .4s;
+}
