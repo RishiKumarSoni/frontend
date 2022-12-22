@@ -618,6 +618,53 @@ body {
     line-height: 24px;
 }
 
+/* === project === */
+
+.project {
+    /* border: 1px solid red; */
+    padding: 100px 0;
+    align-items: center;
+    align-items: center;
+    display: flex;
+    background-image: url("../images/leaf.jpg");
+    justify-content: space-around;
+    background-color: #828282;
+}
+
+.project .ncy {
+    width: 25%;
+    font-size: 200px;
+    /* border: 1px solid red; */
+    color: #FFCC2E;
+    font-weight: 700;
+    /* padding-left: -50px; */
+    margin-left: -64px;
+}
+
+.project .project-p {
+    width: 40%;
+    /* border: 1px solid red; */
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.project .project-btn button{
+    /* width: 25%; */
+    padding: 16px 32px;
+    /* border: 1px solid red; */
+    color: white;
+    background-color: black;
+    font-weight: bold;
+    margin-bottom: 0;
+    margin-right: 64px;
+}
+
+.project .project-btn:hover {
+    margin-bottom: 10px;
+    transition: 0.4s;
+}
+
 /* ==== footer ==== */
 
 .footer {
