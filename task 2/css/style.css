@@ -216,7 +216,8 @@ body {
 }
 
 .work-pic .work-part img:hover {
-    transition: .4s;
+    transition: 1s;
+    transition-timing-function: ease;
     transform: scale(1.2);
 }
 
@@ -626,9 +627,10 @@ body {
     align-items: center;
     align-items: center;
     display: flex;
-    background-image: url("../images/leaf.jpg");
+    background-image: url("../images/leaf.png") no-repeat;
+    /* object-fit: cover; */
     justify-content: space-around;
-    background-color: #828282;
+    background-color: white;
 }
 
 .project .ncy {
