@@ -107,7 +107,7 @@ function numfun(x) {
         a = 10*a + x;
 
         // document.getElementById("input").innerHTML = string(a)
-        document.getElementById("input").innerHTML = a;
+        document.getElementById("input").innerHTML = a + o;
     }
 
     else if (c == 1) {
@@ -116,6 +116,7 @@ function numfun(x) {
         // document.getElementById("input").innerHTML = string(a) + string(o) + string(b)
         document.getElementById("input").innerHTML = a + o + b;
 
+        c = 0;
     }
 }
 
@@ -132,9 +133,9 @@ function plus() {
     else if (c == 1) {
         answer();
 
-        c = 0;
-
         document.getElementById("input").innerHTML = a + o;
+        
+        c = 0;
     }
 
 }
@@ -171,27 +172,36 @@ function divide() {
 
 
 function answer(){
+    let temp = 0;
     if (o == '+') {
 
-        let temp = a + b;
-        document.getElementById("input").innerHTML = temp;
+        temp = a + b;
+        if(c == 0){
+            document.getElementById("input").innerHTML = temp;
+        }
     }
     else if (o == '-') {
 
-        let temp = a - b;
-        document.getElementById("input").innerHTML = temp;
+        temp = a - b;
+        if(c == 0){
+            document.getElementById("input").innerHTML = temp;
+        }
     }
     else if (o == '*') {
 
-        let temp = a * b;
-        document.getElementById("input").innerHTML = temp;
+        temp = a * b;
+        if(c == 0){
+            document.getElementById("input").innerHTML = temp;
+        }
     }
     else if (o == '/') {
 
-        let temp = a / b;
-        document.getElementById("input").innerHTML = temp;
+        temp = a / b;
+        if(c == 0){
+            document.getElementById("input").innerHTML = temp;
+        }
     }
 
-    a = temp;
+    a = 0;
     b = 0;
 }
