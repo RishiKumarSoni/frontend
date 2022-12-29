@@ -1,5 +1,8 @@
 function Clear() {
-    document.getElementById("input").innerHTML = ''
+    document.getElementById("input").innerHTML = '';
+    a = 0;
+    b = 0;
+    c = 0;
     // working fine
 }
 
@@ -94,17 +97,17 @@ function answer(){
 //     var show = Array.from(String(document.getElementById("input")).value, temp)
 // }
 
-var c = 0
-var a = 0
-var o = ''
-var b = 0
+var c = 0;
+var a = 0;
+var o = '';
+var b = 0;
 
 function numfun(x) {
     if (c == 0) {
         a = 10*a + x;
 
         // document.getElementById("input").innerHTML = string(a)
-        document.getElementById("input").innerHTML = a
+        document.getElementById("input").innerHTML = a;
     }
 
     else if (c == 1) {
@@ -117,10 +120,19 @@ function numfun(x) {
 }
 
 function plus() {
+    o = '+';
     
     if (c == 0) {
-        o = '+';
-        c += 1;
+
+        c = 1;
+
+        document.getElementById("input").innerHTML = a + o;
+    }
+
+    else if (c == 1) {
+        answer();
+
+        c = 0;
 
         document.getElementById("input").innerHTML = a + o;
     }
@@ -131,7 +143,7 @@ function minus() {
     
     if (c == 0) {
         o = '-';
-        c += 1;
+        c = 1;
 
         document.getElementById("input").innerHTML = a + o;
     }
@@ -141,7 +153,7 @@ function multiply() {
     
     if (c == 0) {
         o = '*';
-        c += 1;
+        c = 1;
 
         document.getElementById("input").innerHTML = a + o;
     }
@@ -151,7 +163,7 @@ function divide() {
     
     if (c == 0) {
         o = '/';
-        c += 1;
+        c = 1;
 
         document.getElementById("input").innerHTML = a + o;
     }
@@ -164,22 +176,22 @@ function answer(){
         let temp = a + b;
         document.getElementById("input").innerHTML = temp;
     }
-    if (o == '-') {
+    else if (o == '-') {
 
         let temp = a - b;
         document.getElementById("input").innerHTML = temp;
     }
-    if (o == '*') {
+    else if (o == '*') {
 
         let temp = a * b;
         document.getElementById("input").innerHTML = temp;
     }
-    if (o == '/') {
+    else if (o == '/') {
 
         let temp = a / b;
         document.getElementById("input").innerHTML = temp;
     }
 
-    a = 0;
+    a = temp;
     b = 0;
 }
