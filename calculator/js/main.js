@@ -1,30 +1,26 @@
 let Arr = [];
 let Action = ['+', '-', '*', '/', '%'];
 
-let tempA = null;
+let tempA = 0;
 let tempAction = null;
-let tempB = null;
+let tempB = 0;
 
-let temp = null;
+let temp = 0;
 let count = 0;
 
 function numfun(x) {
-    
-    if (Number.isInteger(x) && count == 0){
-        count = 1;
-        Arr.push(x);
-    }
-    else if (Number.isInteger(x) && count == 1){
-        temp = Arr.pop();
 
-        temp = 10*temp + x;
-        Arr.push(temp);
-    }
-    
-    else {
+    if(Arr.length == 0){
         Arr.push(x);
-        count = 0;
-        temp = 0;
+    }
+    else if(Arr.includes(x)) {
+        Arr.push(x)
+    }
+    else {
+        temp = Arr.pop();
+        temp = 10*temp + x;
+
+        Arr.push(temp);
     }
 
     document.getElementById("input").innerHTML = Arr.join('');

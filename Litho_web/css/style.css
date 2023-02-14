@@ -31,6 +31,8 @@ body {
     text-decoration: none;
     color: black;
     font-weight: 600;
+
+    transition: all 0.2s ease-in-out;
 }
 
 .navigation a:hover {
@@ -45,12 +47,18 @@ body {
 }
 
 .social-icon a {
-    padding: 0 4px;
+    padding-left: 16px;
+    transition: all 0.4s ease-in-out;
 
 }
 
 .social-icon a:hover {
     opacity: 50%;
+}
+
+.social-icon a img {
+    width: 16px;
+
 }
 
 /* === banner === */
@@ -88,6 +96,13 @@ body {
     /* border: none; */
     font-weight: 600;
     opacity: 100%;
+
+    transition: all .4s ease-in-out;
+}
+
+.banner-btn:hover {
+    cursor: pointer;
+    background: #ffc413;
 }
 
 /* === design ==== */
@@ -110,6 +125,12 @@ body {
 
 .design-icon h3 {
     font-size: 14px;
+    
+}
+
+.design .design-icon img{
+    transition: all .2s ease-in-out;
+
 }
 
 .design .design-icon img:hover {
@@ -166,10 +187,15 @@ body {
     border-bottom: 2px solid black;
     color: black;
     margin-top: 10px;
+
+    transition: all .4s ease-in-out;
+
 }
 
 .design-a:hover {
     opacity: 70%;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+
 }
 
 /* === work === */
@@ -196,6 +222,8 @@ body {
     text-decoration: none;
     font-weight: 600;
     color: gray;
+
+    
 }
 
 .work-head a:hover {
@@ -213,11 +241,11 @@ body {
 
 .work-pic .work-part img {
     width: 100%;
+    transition: all 1s ease-in-out;
+
 }
 
 .work-pic .work-part img:hover {
-    transition: 1s;
-    transition-timing-function: ease;
     transform: scale(1.2);
 }
 
@@ -277,11 +305,15 @@ body {
     align-items: center;
     padding: 0px;
     margin: 0 10px;
+
+    border: 1px solid #fff;
+    transition: all .5s ease-in-out;
+
 }
 
 .service .service-info .service-icon:hover {
     border: 1px solid black;
-    transition: 0.3s;
+
 }
 
 .service .service-infotext {
@@ -293,7 +325,7 @@ body {
 
 .service .service-infotext .info-head {
     padding: 0; margin: 0 10px;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 32px;
 }
 
@@ -360,11 +392,13 @@ body {
     color: black;
     padding: 16px 32px;
     font-weight: 600;
+
+    transition: all .6s ease-in-out;
+
 }
 
 .hire .price-btn:hover {
     background-color: black;
-    transition: 0.4s;
     color: white;
 }
 
@@ -428,11 +462,13 @@ body {
     background-color: white;
     color: black;
     padding: 8px 16px;
+
+    transition: all .6s ease-in-out;
+
 }
 
 .hire .std-btn-1:hover {
     background-color: black;
-    transition: 0.4s;
     color: white;
 }
 
@@ -443,12 +479,14 @@ body {
     background-color: black;
     color: white;
     padding: 8px 16px;
+
+    transition: all .6s ease-in-out;
+
 }
 
 .hire .std-btn-2:hover {
     background-color: white;
     color: black;
-    transition: 0.4s;
 }
 
 .hire .ribbon {
@@ -510,6 +548,9 @@ body {
     object-fit: scale-down;
     border: 1px solid #c9c9c9;
     opacity: 50%;
+
+    transition: all .4s ease-in-out;
+
 }
 
 .company .row1 img:hover {
@@ -539,7 +580,8 @@ body {
     font-size: 18px;
     margin: 0;
     text-decoration: none;
-    /* border: 1px solid red; */
+    transition: all .4s ease-in-out;
+
     color: black;
     border-bottom: 2px solid black;
     padding-bottom: 4px;
@@ -562,6 +604,7 @@ body {
     background-color: white;
     align-items: center;
 }
+
 
 .article .insta-page .insta a{
     text-decoration: none;
@@ -589,12 +632,17 @@ body {
 
 .article .insta-page .insta-img {
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
+    transition: all .5s ease-in-out;
+
+}
+
+.article .article-container .new{
+    overflow: hidden;
 }
 
 .article .insta-page .insta-img:hover {
     transform: scale(1.2);
-    transition: 0.4s;
 }
 
 .article .insta-page .title {
@@ -658,13 +706,14 @@ body {
     color: white;
     background-color: black;
     font-weight: bold;
-    margin-bottom: 0;
+    /* margin-bottom: 0; */
     margin-right: 64px;
+    transition: margin-bottom .4s ease-in-out;
 }
 
-.project .project-btn:hover {
+.project .project-btn button:hover {
     margin-bottom: 10px;
-    transition: 0.4s;
+
 }
 
 /* ==== footer ==== */
@@ -740,7 +789,13 @@ body {
     margin-right: 8px;
 }
 
+.footer .footer-right img{
+    width: 16px;
+    margin-left: 20px;
+    transition: all .4s ease-in-out;
+
+}
+
 .footer .footer-right img:hover {
     opacity:50%;
-    transition: .4s;
 }
